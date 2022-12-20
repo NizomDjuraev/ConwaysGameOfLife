@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <style>
+        #container {
+        position: relative;
+        top: 50px;
+        font-size: 0;
+        margin:auto;
+        height:700px;
+        width:700px;
+        margin-bottom: 20px;
+        border: none;
+        }
+
+        .buttonContainer {
+        margin:auto;
+        width:700px;
+        }
+
+        #container div {
+            border: 1px solid black;
+        }
+
+        button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        }
+
+        button:hover {
+        background-color: #444;
+        }
+    </style>
+
+    <body>
+        <h1 style="text-align: center;">Conway's Game of Life</h1>
+        <div id="container">
+        </div>
+    </body>
+    <body>
+    <div><br><br><br><br></div>
+    <div class="buttonContainer">    
+        <button type='button' onclick="stepButton()"  id="Step"> Step</button>
+        <button type='button' onclick="goButton()"  id="Go"> Go</button>
+        <button type='button' onclick="pauseButton()"  id="Pause"> Pause</button>
+        <button type='button' onclick="resetButton()"  id="Reset"> Reset</button>
+        <button type='button' onclick="randomButton()"  id="Random"> Random</button>
+    </div>
+    <script src="index.js">
+	</script>
+    </body>
+</html>
